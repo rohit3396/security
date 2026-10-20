@@ -4,5 +4,5 @@ data "tfe_outputs" "network" {
 }
 
 output "network_public_ips" {
-  value = data.tfe_outputs.network.outputs.IP
+  value = data.tfe_outputs.network.nonsensitive_values.IP
 }
